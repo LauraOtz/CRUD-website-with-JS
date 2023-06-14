@@ -1,0 +1,19 @@
+.agula-nav{
+    height: 60px;
+    }
+    .nav-color{
+        background-color: rgb(252, 235, 204) !important;
+       
+    }
+
+    .btn-color{
+        background-color: rgba(221, 150, 58, 0.849) !important;
+        border: 0px;
+        color: aliceblue;
+    }
+
+
+    .nav-col{
+        background-color: rgba(255, 206, 183, 0.466) !important;
+       color: aliceblue;
+    }

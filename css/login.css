@@ -1,0 +1,11 @@
+body{
+   
+    background: rgb(20,232,112);
+    background: linear-gradient(90deg, rgba(20,232,112,0.5158438375350141) 0%, rgba(121,44,9,0.7819502801120448) 35%, rgba(255,115,0,0.7763480392156863) 100%);
+
+}
+
+.btn-inicio{
+    background: rgb(177, 81, 2);
+    color: aliceblue;
+}

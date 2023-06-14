@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/nosotros.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+
+    <title>Agula</title>
+  </head>
+  <body>
+    <header>
+      <!-- Menú principal -->
+      <nav class="navbar navbar-expand-lg nav-color">
+        <div class="container-fluid agula.nav">
+          <a class="navbar-brand " href="#">
+            <img src="../assets/agularec.png" alt="logo" class="agula-nav"/>
+          </a>
+          <button
+            class="navbar-toggler btn-color"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon text-white ">⁝</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu_lista">
+              <li class="nav-item">
+                <a class="nav-link  text-dark" aria-current="page" href="./home.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link text-dark active" href="./nosotros.html">Sobre mí</a>
+              </li>
+              <!-- si el usuario es admin se habilite la opcion administración  -->
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-dark btn-color " type="submit">
+                Buscar
+              </button>
+            </form>
+          
+                <button class="btn btn-dark ms-2 btn-color mt-md-2 mt-lg-0 mt-sm-2" onclick="cerrarSesion()">
+                  Cerrar sesión
+                </button>
+              
+          </div>
+        </div>
+      </nav>
+      <!-- ----------------------------- -->
+    </header>
+    <main>
+      <div class="container mb-3 col-md-10 col-sm-8 mx-auto mt-3 container-sobreMi">
+        <div class="row">
+          <div class="col">
+
+
+            <div class="card ">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="../assets/ella.jpg"
+                    class="img-fluid rounded-start"
+                    alt="mujer"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h4 class="card-title text-center mt-lg-5">Gracias por estar aquí</h4>
+                    <p class="card-text mt-lg-5">
+                      Todo comenzó como una terapia luego de atravezar una situacion muy dolorosa en mi vida, sin saberlo aquello que me llevó a reencontrarme conmigo misma me despertó una pasion por la decoracion, los hilos y la enseñanza. Hoy tengo una serie de más de 200 cursos disponibles y te animo a probar este arte que tanto llena el alma. 
+                    </p>
+                    <p class="card-text mt-lg-5">
+                      <small class="text-body-secondary"
+                        >Un gusto saludarte! Valeria Pico</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- contacto -->
+<div class="card">
+  <div class="card-body text-center "> 
+    <h4>
+
+      <b>
+  
+      Dejame tu consulta y me contactaré contigo
+    </b>
+    </h4>
+    
+  </div>
+</div>
+
+
+
+
+      <!-- formulario------------------------------ -->
+
+      <div class="container mb-5 ">
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 offset-md-4">
+            <form id="form_contacto">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Nombre</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre_contacto"
+                  placeholder="Tu nombre y apellido"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correo_contacto"
+                  placeholder="nombre@ejemplo.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Mensaje</label
+                >
+                <textarea
+                  class="form-control"
+                  id="mensaje_contacto"
+                  rows="3"
+                  placeholder="Deja aquí tu consulta"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn-color float-end">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div id="modal-content" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">Actualizar Curso</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- cuerpo del modal  -->
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/c2813ccf5b.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/nosotros.js"></script>
+  </body>
+</html>
